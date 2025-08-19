@@ -1,0 +1,159 @@
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Navbar (Sticky Top) */
+/* .navbar {
+  background-color: #007bff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;  /* Stays fixed at top */
+   
+
+/* Page content */
+/* .content {
+  flex: 1;
+  padding: 6rem 2rem 4rem; /* Extra top and bottom padding for sticky nav & footer */
+  /* max-width: 900px;
+  margin: auto;
+  font-size: medium;
+}
+
+h1 {
+  color: #007bff;
+}  */
+
+/* Footer (Sticky Bottom) */
+/* .footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;  /* Stays fixed at bottom */
+  /* bottom: 0;
+  left: 0;
+  width: 100%;
+} */ 
+
+/* .card{
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  box-shadow: 1px 1px gray;
+  border-radius: 8px; */
+  /* padding: 10px;
+}
+h4{
+  font-size: 22px;
+} */
+
+/* Responsive
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}  */
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #0077ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: white;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+.nav-links button:hover,
+.nav-links .active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Content */
+.content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* App container full height banate hain */
+.app {
+  min-height: 100vh; /* full screen height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content ko grow karne dete hain */
+.content {
+  flex: 1; 
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Footer hamesha neeche */
+.footer {
+  background: #0077ff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto; /* ye footer ko neeche push karega */
+}
