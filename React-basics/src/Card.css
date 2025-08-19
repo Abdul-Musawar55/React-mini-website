@@ -1,0 +1,9 @@
+.card-container {
+    /* width: 200px;
+    height: 300px; */
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
